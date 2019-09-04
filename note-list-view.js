@@ -9,7 +9,7 @@
       return `<li><div>${note.text}</div><li>`
     });
    
-    return `<ul>${note_texts.join()}</ul>`
+    return `<ul>${note_texts.join("")}</ul>`
   }
 
   exports.NoteListView = NoteListView.prototype.constructor = NoteListView;

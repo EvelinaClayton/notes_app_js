@@ -1,0 +1,22 @@
+{
+  "name": "notes_app_js",
+  "version": "1.0.0",
+  "description": "``` As a programmer I can see a list of my notes, where each note is abbreviated to the first 20 characters  So I can find the one I want",
+  "main": "note-list-model.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvelinaClayton/notes_app_js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvelinaClayton/notes_app_js/issues"
+  },
+  "homepage": "https://github.com/EvelinaClayton/notes_app_js#readme",
+  "dependencies": {
+    "hapi": "^18.1.0"
+  }
+}
