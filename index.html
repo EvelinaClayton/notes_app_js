@@ -1,9 +1,32 @@
 <html>
   <head>
     <script src="note-model.js"></script>
+    <script src="note-list-model.js"></script>
+    <script src="note-list-view.js"></script>
     <script src="__tests__/note-model-tests.js"></script>
   </head>
   <body>
-  
+    <div id="app"></div>
+
+    <script>
+    // Creating a new List:
+      var list = new NoteList
+      // Adding new notes:
+      list.create('first note')
+      list.create('second')
+      list.create('third')
+      // list.view()
+      // console.log(list.view())
+      
+      // Creating a new View:
+      var view = new NoteListView(list)
+      // view.view()
+      // console.log(view.view())
+
+      // Injecting into the app div above:
+      window.onload = function what(){
+        document.getElementById("app").innerHTML = view.view()
+      };
+    </script>
   </body>
 </html>
