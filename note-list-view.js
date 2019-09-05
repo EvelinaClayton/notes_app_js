@@ -6,7 +6,7 @@
   
   NoteListView.prototype.view = function() {
     let note_texts = this.noteListModel.view().map(function(note) {
-      return `<li><div>${note.text}</div><li>`
+      return `<li><div>${note.text}</div></li>`
     });
    
     return `<ul>${note_texts.join("")}</ul>`
