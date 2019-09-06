@@ -1,4 +1,15 @@
 // Creating a new List:
+document.getElementById("create_button").onclick = function() {
+  var textArea = document.getElementById("note_input");
+  var text = textArea.value; 
+  var note = new Note(text);
+  var displayNote = note.displayText();
+  var notesDiv = document.getElementById("notes");
+  notesDiv.appendChild(displayNote);
+  
+}
+
+
   var list = new NoteList
 // Adding new notes:
   list.create('first note')

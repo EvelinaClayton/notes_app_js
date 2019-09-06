@@ -9,13 +9,18 @@
     }
   }
   exports.assert = assert;
-})(this);
 
-(function(exports){
   function noteSavesTheStringToTheTextVariable() {
     var note = new Note('My favorite language is JavaScript');
 
     assert.isTrue(note.text === 'My favorite language is JavaScript');
+  };
+
+  function NoteLength(){
+    var note = new Note("This note has more than 20 characters.")
+    if (note.text !="This note has more than 20 characters.") {
+      throw "The text in the note is too long."
+    }
   };
 
   exports.noteSavesTheStringToTheTextVariable = noteSavesTheStringToTheTextVariable;
@@ -23,3 +28,4 @@
 
 
 noteSavesTheStringToTheTextVariable();
+
